@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/raphael-min.js" ></script>
+		<script type="text/javascript" src="js/mapPathData.js" ></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="fl"><img src="img/logo.png"/></div>
+			<ul class="fl nav">
+				<li class="active">
+					<div class="item">安全</div>
+					<div class="tip">nombre de restaurant par arrondissement source: yelp 2017 </div>
+				</li>
+				<li>
+					<div class="item">饭店</div>
+					<div class="tip">nombre de restaurant par arrondissement source: yelp 2017</div>
+				</li>
+				<li>
+					<div class="item">酒吧</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">人口密度</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">绿化率</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">运动场所</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">文化场所</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">移民+外国人</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">地价</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+				<li>
+					<div class="item">租价</div>
+					<div class="tip">Riquet-Stalingrad </div>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="map">
+			<div class="item" id="a-1">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-2">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-3">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-4">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-5">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-6">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-7">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-8">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-9">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-10">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-11">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-12">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-13">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-14">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-15">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-16">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-17">
+				<div class="img-circle">
+					<div class="rank">10ème</div>
+				</div>
+			</div>
+			<div class="item" id="a-18">
+				<div class="img-circle">
+					<div class="rank"></div>
+				</div>
+			</div>
+			<div class="item" id="a-19">
+				<div class="img-circle">
+					<div class="rank"></div>
+				</div>
+			</div>
+			<div class="item" id="a-20">
+				<div class="img-circle">
+					<div class="rank"></div>
+				</div>
+			</div>
+			
+			<!--可操作的功能点，也是定位到地图上的-->
+			<div class="click-point1 pointer"></div>
+			<div class="click-point2 pointer"></div>
+		</div>
+		
+		<div id="floating" style="display: block;">
+			<div class="trans">
+				<h1></h1>
+			</div>
+			<div class="black">
+				<h2><span class="highlight txt"></span></h2>
+			</div>
+		</div>
+		
+		<div class="tip-text">
+			<div class="tip-title">
+			</div>
+			<div class="tip-content"></div>
+		</div>
+		<!--图例部分-->
+		<div class="legend">
+			<p class="top-text">安全五星级</p>
+			<p class="bottom-text">安全一星级</p>
+		</div>
+	</body>
+</html>
